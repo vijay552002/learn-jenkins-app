@@ -41,12 +41,12 @@ pipeline {
         }
 
         stage('E2E') {
-            agent {
-                docker {
-                    image 'mcr.microsoft.com/playwright:v1.57.0-noble'
-                    reuseNode true
-                }
-            }
+            // agent {
+            //     docker {
+            //         image 'mcr.microsoft.com/playwright:v1.57.0-noble'
+            //         reuseNode true
+            //     }
+            // }
 
             steps {
                 sh '''
