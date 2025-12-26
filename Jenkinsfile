@@ -77,7 +77,7 @@ pipeline {
                         sh '''
                             serve -s build &
                             sleep 10
-                            #npx playwright test  --reporter=html
+                            npx playwright test  --reporter=html
                         '''
                     }
 
